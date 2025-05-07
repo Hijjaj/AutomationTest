@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-05-07T08:55:12.609Z",
+    "end": "2025-05-07T08:55:33.501Z",
+    "duration": 20892,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "32714409-92da-4e8c-aa68-e77b94e9c70d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login_and_navigation.cy.js",
+      "file": "cypress\\e2e\\login_and_navigation.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "676fde60-fc7e-47f7-ae6e-5d38e288b696",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should log in and perform form input actions",
+              "fullTitle": "template spec should log in and perform form input actions",
+              "timedOut": null,
+              "duration": 18591,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://dsh-poc.assistxvision.ai/login');\ncy.get('input#email').should('have.attr', 'type', 'email').type('waniadmin@yopmail.com');\ncy.get('input#password').should('have.attr', 'type', 'password').type('Password123@');\ncy.get('input#remember_me').check().should('be.checked');\ncy.contains('button', 'Log in').click();\ncy.url().should('not.include', '/login');\ncy.contains('Dashboard').should('exist');\n/* ==== Generated with Cypress Studio ==== */\ncy.get('.sidenav-toggler-inner > :nth-child(3)').click();\ncy.get('#submenu-dashboard > :nth-child(2) > .nav-link').click();\ncy.get('.sidenav-toggler-inner > :nth-child(1)').click();\ncy.get('#submenu-dashboard > :nth-child(3) > .nav-link').click();\ncy.get('.sidenav-toggler-inner').click();\ncy.get('#submenu-dashboard > :nth-child(4) > .nav-link').click();\ncy.get('.sidenav-toggler-inner').click();\ncy.get(':nth-child(2) > .nav-link-header').click();\ncy.get('#dashboardsExamples > :nth-child(1) > .nav-link').click();\ncy.get('.sidenav-toggler-inner').click();\ncy.get('#dashboardsExamples > :nth-child(2) > .nav-link').click();\ncy.get('.sidenav-toggler-inner').click();\ncy.get('#dashboardsExamples > :nth-child(3) > .nav-link').click();\ncy.get('.sidenav-toggler-inner > :nth-child(1)').click();\ncy.get('#dashboardsExamples > :nth-child(4) > .nav-link').click();\ncy.get('.sidenav-toggler-inner').click();\ncy.get('#dashboardsExamples > :nth-child(5) > .nav-link').click();\ncy.get('.sidenav-toggler-inner').click();\ncy.get('#dashboardsExamples > :nth-child(6) > .nav-link').click();\ncy.get('.sidenav-toggler-inner').click();\ncy.get('#dashboardsExamples > :nth-child(7) > .nav-link').click();\ncy.get('.sidenav-toggler-inner > :nth-child(2)').click();\ncy.get('.navbar-nav > :nth-child(4) > .nav-link').click();\ncy.get('.sidenav-toggler-inner').click();\ncy.get('.navbar-nav > :nth-child(5) > .nav-link').click();\ncy.get('.sidenav-toggler-inner').click();\ncy.get('.navbar-nav > :nth-child(6) > .nav-link').click();\ncy.get('.sidenav-toggler-inner').click();\ncy.get('.navbar-nav > :nth-child(7) > .nav-link').click();\ncy.get('.sidenav-toggler-inner').click();\ncy.get(':nth-child(8) > .nav-link').click();\ncy.get('.sidenav-toggler-inner').click();\ncy.get(':nth-child(9) > .nav-link').click();\n/* ==== End Cypress Studio ==== */",
+              "err": {},
+              "uuid": "bc41db07-1254-4803-8239-9328eb7fc2c5",
+              "parentUUID": "676fde60-fc7e-47f7-ae6e-5d38e288b696",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bc41db07-1254-4803-8239-9328eb7fc2c5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 18591,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
