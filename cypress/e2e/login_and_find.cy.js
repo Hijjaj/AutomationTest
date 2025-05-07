@@ -26,6 +26,7 @@ describe('template spec', () => {
     cy.url().should('not.include', '/login');
     cy.contains('Dashboard').should('exist');
 
+    //filter form
     cy.get('#filter_ai').select('intrusion');
     cy.get('#start_date').click();
     cy.get('#select2-regional-container').click();

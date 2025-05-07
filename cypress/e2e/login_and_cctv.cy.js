@@ -5,7 +5,7 @@ Cypress.on('uncaught:exception', (err, runnable) => {
   }
 });
 
-describe('Login Test and Form Interaction', () => {
+describe('template spec', () => {
   it('should log in and perform form input actions', () => {
     cy.visit('https://dsh-poc.assistxvision.ai/login');
 

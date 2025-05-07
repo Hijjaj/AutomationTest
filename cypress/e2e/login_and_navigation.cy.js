@@ -27,7 +27,7 @@ describe('template spec', () => {
     cy.contains('Dashboard').should('exist');
 
 
-    /* ==== Generated with Cypress Studio ==== */
+    // navigating trough navbar
     cy.get('.sidenav-toggler-inner > :nth-child(3)').click();
     cy.get('#submenu-dashboard > :nth-child(2) > .nav-link').click();
     cy.get('.sidenav-toggler-inner > :nth-child(1)').click();
